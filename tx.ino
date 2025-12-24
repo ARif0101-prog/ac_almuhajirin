@@ -34,7 +34,7 @@ const String menuPassword = "14000";
 bool menuUnlocked = false;
 
 // MAC penerima (ganti sesuai MAC penerima)
-uint8_t receiverAddress[] = {0x24, 0x6F, 0x28, 0xAA, 0xBB, 0xCC};
+uint8_t receiverAddress[] = {0xE0, 0x98, 0x06, 0x93, 0x9E, 0x1B};
 
 typedef struct {
   char cmd[4];
