@@ -1,0 +1,27 @@
+🔌 Wiring Pemancar (ringkas)
+Komponen:
+• 	ESP8266 D1
+• 	RTC DS1307
+• 	LCD I2C 16×2
+• 	Keypad 4×4
+Koneksi:
+• 	DS1307: SDA → D2, SCL → D1, VCC → 5V, GND → GND
+• 	LCD I2C: SDA → D2, SCL → D1, VCC → 5V, GND → GND
+• 	Keypad: Baris → D5–D8, Kolom → D0, D3, D4, D9
+• 	ESP8266 power → USB 5V
+
+🔌 Wiring Penerima
+Komponen:
+- ESP8266 D1 (Demos D1 Mini atau NodeMCU)
+- Relay modul (disarankan dengan optocoupler untuk isolasi)
+- AC load (misalnya unit AC)
+Koneksi:
+- Relay IN → D1 (sesuai kode)
+- Relay VCC → 5V
+- Relay GND → GND
+- Relay output → jalur listrik AC (fase diputus oleh relay, netral langsung ke beban)
+- ESP8266 power → USB 5V atau adaptor 5V
+⚠️ Catatan keselamatan:
+- Pastikan relay modul yang digunakan mendukung tegangan AC 220V.
+- Gunakan kotak tertutup untuk modul relay agar aman dari sentuhan langsung.
+- Hubungkan fase AC melalui relay, jangan netral.
